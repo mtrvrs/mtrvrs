@@ -1,0 +1,46 @@
+:root {
+    --color-background: #FDFDFD;
+    --color-primary: #333333;
+    --color-secondary: #6B7280;
+    --color-links: #047857;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: sans-serif; // change
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--color-primary);
+    background-color: var(--color-background);
+}
+
+a {
+    color: var(--color-links);
+}
+
+header {
+    margin: 40px 0;
+}
+
+footer {
+    font-size: 12px;
+}
+
+// sets up the grid
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, calc(90ch - 40px)) 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0 20px;
+}
+
+// forces everything to the centre
+.wrapper > * {
+    grid-column: 2;
+  }
