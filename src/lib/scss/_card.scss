@@ -1,0 +1,13 @@
+.card {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    &__block {
+
+        &-header {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

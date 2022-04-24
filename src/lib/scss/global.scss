@@ -1,3 +1,7 @@
+@use './header';
+@use './footer';
+@use './card';
+
 :root {
     --color-background: #FDFDFD;
     --color-primary: #333333;
@@ -38,9 +42,9 @@ footer {
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     margin: 0 20px;
-}
 
-// forces everything to the centre
-.wrapper > * {
-    grid-column: 2;
-  }
+    // forces everything to the centre
+    & > * {
+        grid-column: 2;
+    }
+}

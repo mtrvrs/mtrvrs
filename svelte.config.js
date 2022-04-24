@@ -11,7 +11,10 @@ const config = {
     adapter: adapter(),
   },
 
-  preprocess: [mdsvex(mdsvexConfig), sveltePreprocess()],
+  preprocess: [
+    sveltePreprocess(),
+    mdsvex(mdsvexConfig)
+  ],
   
 };
 

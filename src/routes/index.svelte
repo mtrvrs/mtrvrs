@@ -1,9 +1,12 @@
-<script>
+<!-- this is the default landing page -->
+
+<!-- <script>
+    import Card from "$lib/components/card.svelte";
 </script>
 
 <div class="index">
-    <h2>Home</h2>
+    <Card />
 </div>
 
 <style>
-</style>
+</style> -->
