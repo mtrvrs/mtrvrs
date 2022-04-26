@@ -13,7 +13,10 @@
 
 <script>
     import Card from "$lib/components/card.svelte";
+    import Nav from "$lib/components/nav.svelte";
     export let posts;
 </script>
+
+<Nav />
 
 <Card {posts} />

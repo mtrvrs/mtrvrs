@@ -1,6 +1,7 @@
 @use './header';
 @use './footer';
 @use './card';
+@use './nav';
 
 :root {
     --color-background: #FDFDFD;
@@ -25,6 +26,7 @@ html, body {
 
 a {
     color: var(--color-links);
+    text-decoration: none;
 }
 
 header {

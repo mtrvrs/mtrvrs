@@ -1,12 +1,22 @@
-<!-- this is the default landing page -->
+<script context="module">
+    export const load = async ({ fetch }) => {
+        const posts = await fetch("/api/posts.json");
+        const allPosts = await posts.json();
 
-<!-- <script>
-    import Card from "$lib/components/card.svelte";
+        return {
+            props: {
+                posts: allPosts.slice(0, 3),
+            },
+        };
+    };
 </script>
 
-<div class="index">
-    <Card />
-</div>
+<script>
+    import Card from "$lib/components/card.svelte";
+    import Nav from "$lib/components/nav.svelte";
+    export let posts;
+</script>
 
-<style>
-</style> -->
+<Nav />
+
+<Card {posts} />
