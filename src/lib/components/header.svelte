@@ -14,6 +14,9 @@
         </div>
     </div>
 </header> -->
+<script>
+    import { page } from "$app/stores";
+</script>
 
 <header>
     <div class="header">
@@ -22,6 +25,8 @@
             <p>Developer based in Tasmania, Australia.</p>
             <a href="/about">Read more about me.</a>
         </div>
-        <div />
+        <div>
+            / index {$page.url.pathname.replace(/[/]/g, " / ")}
+        </div>
     </div>
 </header>
